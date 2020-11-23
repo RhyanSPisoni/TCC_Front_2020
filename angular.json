@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cliente-app": {
+    "clientes-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cliente-app",
+            "outputPath": "dist/clientes-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,10 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -63,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cliente-app:build"
+            "browserTarget": "clientes-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cliente-app:build:production"
+              "browserTarget": "clientes-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cliente-app:build"
+            "browserTarget": "clientes-app:build"
           }
         },
         "test": {
@@ -89,7 +92,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -112,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cliente-app:serve"
+            "devServerTarget": "clientes-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cliente-app:serve:production"
+              "devServerTarget": "clientes-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "cliente-app",
+  "defaultProject": "clientes-app",
   "cli": {
-    "analytics": "62f4909e-9192-4dbd-909b-26c7ce92cae0"
+    "analytics": "a30516ae-5d2d-48c9-8e8d-8c4e59024044"
   }
 }
