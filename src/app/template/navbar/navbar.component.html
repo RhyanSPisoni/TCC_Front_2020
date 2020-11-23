@@ -3,5 +3,65 @@
     <button class="btn btn-link btn-sm order-1 order-lg-0" 
             id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
-    </button>            
+    </button>
+
+
+
+
+    
+    <div class="dropdown">
+        <button 
+            class="btn btn-primary dropdown-toggle navbar-dark bg-dark" 
+            id="dropdownMenuButton" 
+            type="button" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" 
+            aria-expanded="false">
+                Profile
+        </button>
+
+            <div 
+                class="dropdown-menu" 
+                id="drop-table">
+            
+            <a 
+                class="dropdown-item"
+                id="drop-user" 
+                href="javascript:void(0);">
+            
+                <div 
+                class="dropdown-item-icon">
+                    <i 
+                        data-feather="user">
+                    </i>
+                </div>
+            Profile
+        </a>
+            <a 
+                class="dropdown-item"  
+                id="drop-config" 
+                href="javascript:void(0);">
+                <div 
+                    class="dropdown-item-icon">
+                        <i 
+                            data-feather="settings">
+                        </i>
+                </div>
+                Settings
+            </a>
+        
+        <a 
+            class="dropdown-item" 
+            id="drop-log" 
+            href="javascript:void(0);">
+                <div 
+                    class="dropdown-item-icon">
+                        <i 
+                            data-feather="log-out">
+                        </i>
+                </div>
+            Logout
+        </a>
+</div>
+    </div>
 </nav>

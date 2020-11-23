@@ -1,0 +1,36 @@
+#dropdownMenuButton{
+    position:absolute; 
+    left: 900px;
+    top: -20px;
+}
+
+#drop-user{    
+    position:absolute; 
+    left: 900px;
+    top: 30px;
+    background-color:rgb(74, 80, 80);
+    color:white;
+}
+
+#drop-config{
+    position:absolute; 
+    left: 900px;
+    top: 60px;
+    background-color: rgb(74, 80, 80);
+    color: white;
+    
+
+}
+
+#drop-log{
+    position:absolute; 
+    left: 900px;
+    top: 90px;
+    background-color: rgb(74, 80, 80);
+    color:white;
+}
+
+#drop-table{
+    background-color: aqua;
+
+}
