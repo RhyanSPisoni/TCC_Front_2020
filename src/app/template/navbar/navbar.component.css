@@ -1,7 +1,13 @@
-#dropdownMenuButton{
+#dropdown2{
     position:absolute; 
     left: 900px;
     top: -20px;
+}
+
+#dropdownt{
+    position:absolute; 
+    left: 900px;
+    top: 10px;
 }
 
 #drop-user{    
@@ -31,6 +37,6 @@
 }
 
 #drop-table{
-    background-color: aqua;
+    background-color: #343a40;
 
 }
