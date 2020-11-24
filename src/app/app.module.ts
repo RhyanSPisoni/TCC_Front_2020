@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component'
 import { ClientesModule } from './clientes/clientes.module';
+import { CategoryModule } from './category/category.module'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ClientesModule } from './clientes/clientes.module';
     BrowserModule,
     AppRoutingModule,
     TemplateModule,
-    ClientesModule
+    ClientesModule,
+    CategoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
