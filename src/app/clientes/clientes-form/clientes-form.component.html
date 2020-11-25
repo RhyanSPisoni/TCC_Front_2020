@@ -3,21 +3,21 @@
     <li class="breadcrumb-item active">BRENT WEB</li>
 </ol>
 
-<div class="conteiner">
-    <form>
-        <div class="row">
+<div class="conteiner" >
+    <form #clienteForm="ngForm" (ngSubmit)="onSubmit()" >
+        <div class="row" >
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Nome</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" [(ngModel)]="cliente.nome" name='nome' class="form-control"/>
                 </div>
                 <div class="form-group">
                     <label>E-mail</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" [(ngModel)]="cliente.email" name="email" class="form-control"/>
                 </div>
                 <div class="form-group">
                     <label>Senha</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" [(ngModel)]="cliente.senha" name="senha" class="form-control"/>
                 </div>                
             </div>
         </div>
