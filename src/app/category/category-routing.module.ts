@@ -21,8 +21,9 @@ const routes: Routes = [
   { path : 'categ-hqmanga', component: MangaComponent},
   { path : 'categ-lit_est', component: LEstrangeiraComponent },
   { path : 'categ-lit_inf', component: LIJuvenilComponent },
-  { path : '/categ-lit_nac', component: NacionalComponent},
-  { path: '/categ-med', component: MedicinaComponent}
+  { path : 'categ-lit_nac', component: NacionalComponent},
+  { path : 'categ-med', component: MedicinaComponent}
+  
 ];
 
 @NgModule({
