@@ -18,10 +18,9 @@ export class ClientesService {
 
   getCliente() : Cliente{
     let cliente : Cliente = new Cliente();
-    cliente.nome ='Bruno';
-    cliente.email ='rhyan@gmail.com'
+    cliente.nome ='teste';
+    cliente.email ='teste@gmail.com'
     cliente.senha ='12345678910';
     return cliente;
-
   }
 }
