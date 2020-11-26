@@ -18,6 +18,7 @@ const routes: Routes = [
   { path : 'categ-adm', component: AdministracaoComponent },
   { path : 'categ-autoajuda', component: AutoajudaComponent },
   { path : 'categ-dida', component: DidaticoComponent },
+  { path : 'categ-dir', component: DireitoComponent},
   { path : 'categ-hqmanga', component: MangaComponent},
   { path : 'categ-lit_est', component: LEstrangeiraComponent },
   { path : 'categ-lit_inf', component: LIJuvenilComponent },
