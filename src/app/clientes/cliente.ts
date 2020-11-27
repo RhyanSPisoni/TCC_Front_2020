@@ -6,4 +6,5 @@ export class Cliente {
     senha: string;
     carteira: number;
     compras: number;      
+    
 }
