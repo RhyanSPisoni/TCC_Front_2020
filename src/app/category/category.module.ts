@@ -13,6 +13,7 @@ import { LEstrangeiraComponent } from './l-estrangeira/l-estrangeira.component';
 import { LIJuvenilComponent } from './l-i-juvenil/l-i-juvenil.component';
 import { NacionalComponent } from './nacional/nacional.component';
 import { MedicinaComponent } from './medicina/medicina.component';
+import { BuscaComponent } from './busca/busca.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { MedicinaComponent } from './medicina/medicina.component';
     LEstrangeiraComponent, 
     LIJuvenilComponent, 
     NacionalComponent, 
-    MedicinaComponent],
+    MedicinaComponent, BuscaComponent],
   imports: [
     CommonModule,
     CategoryRoutingModule
@@ -42,7 +43,8 @@ import { MedicinaComponent } from './medicina/medicina.component';
     LEstrangeiraComponent, 
     LIJuvenilComponent, 
     NacionalComponent, 
-    MedicinaComponent
+    MedicinaComponent,
+    BuscaComponent
   ]
 })
 export class CategoryModule { }

@@ -11,19 +11,28 @@ import { LIJuvenilComponent } from './l-i-juvenil/l-i-juvenil.component';
 import { MangaComponent } from './manga/manga.component';
 import { MedicinaComponent } from './medicina/medicina.component';
 import { NacionalComponent } from './nacional/nacional.component';
+import { LayoutComponent } from '../layout/layout.component';
+import { BuscaComponent } from './busca/busca.component';
 
 const routes: Routes = [
-  { path : 'categ-acao', component: AcaoComponent},
-  { path : 'categ-aven', component: AventuraComponent},
-  { path : 'categ-adm', component: AdministracaoComponent },
-  { path : 'categ-autoajuda', component: AutoajudaComponent },
-  { path : 'categ-dida', component: DidaticoComponent },
-  { path : 'categ-dir', component: DireitoComponent},
-  { path : 'categ-hqmanga', component: MangaComponent},
-  { path : 'categ-lit_est', component: LEstrangeiraComponent },
-  { path : 'categ-lit_inf', component: LIJuvenilComponent },
-  { path : 'categ-lit_nac', component: NacionalComponent},
-  { path : 'categ-med', component: MedicinaComponent}
+  {path : 'categ', component: LayoutComponent, children:[
+    
+    { path : 'acao', component: AcaoComponent},
+    { path : 'aven', component: AventuraComponent},
+    { path : 'adm', component: AdministracaoComponent },
+    { path : 'autoajuda', component: AutoajudaComponent },
+    { path : 'dida', component: DidaticoComponent },
+    { path : 'dir', component: DireitoComponent},
+    { path : 'hqmanga', component: MangaComponent},
+    { path : 'lit_est', component: LEstrangeiraComponent },
+    { path : 'lit_inf', component: LIJuvenilComponent },
+    { path : 'lit_nac', component: NacionalComponent},
+    { path : 'med', component: MedicinaComponent},
+    { path : 'busca', component: BuscaComponent},
+    { path: '', redirectTo : 'categ/busca', pathMatch: 'full'}
+    
+  ]}
+  
   
 ];
 
