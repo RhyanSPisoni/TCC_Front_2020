@@ -12,6 +12,8 @@ import { ClientesService} from './clientes.service'
 import {HttpClientModule }from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component'
+import { AuthService } from './auth.service';
+import { LivrosModule } from './livros/livros.module';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,13 @@ import { LayoutComponent } from './layout/layout.component'
     TemplateModule,
     CategoryModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    LivrosModule
   ],
-  providers: [ ClientesService],
+  providers: [ 
+    ClientesService,
+    AuthService
+  ],
   
   
   bootstrap: [AppComponent]

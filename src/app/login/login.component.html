@@ -11,6 +11,9 @@
                                 </h3>
                             </div>
                             <div class="card-body">
+                                <div class="alert alert-success" *ngIf="mensagemSucesso">
+                                    {{mensagemSucesso}}
+                                </div>
                                 <div class="alert alert-danger" *ngIf="loginError">
                                     Login e/ou senha Incorreto(a)
                                 </div>
@@ -18,9 +21,9 @@
                                 <form #loginForm="ngForm"(submit)="onSubmit()">
                                     
                                     <div class="form-group">
-                                        <label class="small mb-1">E-mail</label>
-                                        <input type="text" name="email"
-                                                [(ngModel)]="email"
+                                        <label class="small mb-1">Nome</label>
+                                        <input type="text" name="Nome"
+                                                [(ngModel)]="nome"
                                                 class="form-control py-4"
                                                 placeholder="Digite seu E-mail"/>
                                     </div>
@@ -39,7 +42,9 @@
                                             Logar
                                         </button>
 
-                                        <button type="button" class="btn btn-success" *ngIf="cadastrando" >
+                                        <button type="button" class="btn btn-success" 
+                                                (click)="cadastrar()"
+                                                *ngIf="cadastrando" >
                                             Cadastrar
                                         </button>
 
