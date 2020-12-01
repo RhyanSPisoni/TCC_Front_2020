@@ -21,7 +21,7 @@ export class LoginComponent  {
     private authService: AuthService
   ) { }
 
-  /*onSubmit(){
+  onSubmit(){
     this.authService
           .tentarLogar(this.username, this.password)
           .subscribe(response => {
@@ -32,7 +32,7 @@ export class LoginComponent  {
             this.errors = ['Usuário e/ou senha incorreto(s).']
           })
   }
-  */
+  
 
   preparaCadastrar(event){
     event.preventDefault();
